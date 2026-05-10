@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MD</title>
+    <script type="text/javascript" src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=TRUq2VwdM5Ci3h91uid4UGsdfgmKeTpnat0grpI4WSPLIcJYDt8YnZu9HYlyUf3RxF2BA0vJeuY45yyKu1YLIaFPIubbI-2ClL2zjkqot_8ZLdXQmlbG2EiBvOH6g1JgXyCk0B_5ja_fQ0uMfz4FX4sB7RfLH6yZ4Yvro7uPuTH7S2hJ-hVSPKh9UL4ERFC2aFE1qewHaQit0wr4mlJhVlDlYpWEjpTnf95Zk1npThjaO6WNPlhN8gmQV3AW9MjhYGR3jy3_Audgb1jvXpHSUUPesvGN36yzfvx7U8d3bX_Mo5Pf2sEXe4WgedvdaeIW__NbqCUEGtX09errncYHV7ZCZtoBB4Yo5YCLRp_2Eg8yICEtIx2t3VnjYsDzU1U80xPS3m_xeiEcK1Vm7_C5SCm6oVoPSIiQ4hYvCFz2wVJJUt6ej0CxbwnCQLQgbXGm9SHU4KkzHs4IzegFn1fwDADQP3qCx3MkNmJjC0qjpjZJPvPRiPV50Wae9KpAL5mDC0yy_hU-G7vOr6JdkscwTRIzZOpfcR3Vdpw0d3pmziCK7SciTLGFcvVLtQDZqtrSngqZKTCXO2q-QV-0RzDPvOoEhqjMxzMQ7wHqEGaA-DQNcST7mg-kIOV_DhrsSenGAD3fCzs4BtoPjoyg2_I9QQ" charset="UTF-8"></script><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            position: relative;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(138, 43, 226, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            z-index: 0;
+            animation: pulse 4s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
+            50% { transform: translate(-50%, -50%) scale(1.2); opacity: 0.8; }
+        }
+
+        .logo {
+            font-size: 120px;
+            font-weight: 900;
+            letter-spacing: -5px;
+            background: linear-gradient(135deg, #8a2be2, #4b0082, #9400d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 0 60px rgba(138, 43, 226, 0.3);
+            animation: glow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { filter: drop-shadow(0 0 20px rgba(138, 43, 226, 0.4)); }
+            to { filter: drop-shadow(0 0 40px rgba(138, 43, 226, 0.8)); }
+        }
+
+        .tagline {
+            font-size: 18px;
+            color: #888;
+            margin-top: 10px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            position: relative;
+            z-index: 1;
+        }
+
+        .divider {
+            width: 100px;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #8a2be2, transparent);
+            margin: 40px auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+            max-width: 800px;
+        }
+
+        .btn {
+            padding: 16px 40px;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            cursor: pointer;
+            border: 2px solid transparent;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #8a2be2, #6a0dad);
+            color: #ffffff;
+            box-shadow: 0 4px 20px rgba(138, 43, 226, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 30px rgba(138, 43, 226, 0.6);
+            background: linear-gradient(135deg, #9b30ff, #7b1fa2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: #8a2be2;
+            border: 2px solid #8a2be2;
+        }
+
+        .btn-outline:hover {
+            background: #8a2be2;
+            color: #ffffff;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 30px rgba(138, 43, 226, 0.4);
+        }
+
+        .btn-glow {
+            background: transparent;
+            color: #ffffff;
+            border: 2px solid rgba(138, 43, 226, 0.5);
+            position: relative;
+        }
+
+        .btn-glow::before {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            background: linear-gradient(45deg, #8a2be2, #4b0082, #8a2be2);
+            border-radius: 50px;
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.4s;
+        }
+
+        .btn-glow:hover::before {
+            opacity: 1;
+        }
+
+        .btn-glow:hover {
+            border-color: transparent;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.5);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 25px;
+            margin-top: 50px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .social-links a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 2px solid #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            text-decoration: none;
+            font-size: 20px;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            border-color: #8a2be2;
+            color: #8a2be2;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(138, 43, 226, 0.3);
+        }
+
+        .footer {
+            margin-top: 60px;
+            padding: 20px;
+            color: #444;
+            font-size: 14px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 0;
+            overflow: hidden;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background: #8a2be2;
+            border-radius: 50%;
+            opacity: 0.3;
+            animation: float 15s infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(100vh) rotate(0deg); opacity: 0; }
+            10% { opacity: 0.3; }
+            90% { opacity: 0.3; }
+            100% { transform: translateY(-100vh) rotate(720deg); opacity: 0; }
+        }
+
+        @media (max-width: 600px) {
+            .logo { font-size: 70px; }
+            .tagline { font-size: 14px; letter-spacing: 4px; }
+            .btn { padding: 14px 30px; font-size: 14px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="hero">
+        <h1 class="logo">MD</h1>
+        <p class="tagline">Your Digital Space</p>
+        <div class="divider"></div>
+    </div>
+
+    <div class="buttons-container">
+        <a href="#" class="btn btn-primary">Home</a>
+        <a href="#" class="btn btn-outline">About</a>
+        <a href="#" class="btn btn-glow">Services</a>
+        <a href="#" class="btn btn-primary">Portfolio</a>
+        <a href="#" class="btn btn-outline">Contact</a>
+        <a href="#" class="btn btn-glow">Blog</a>
+    </div>
+
+    <div class="social-links">
+        <a href="#" title="Twitter">𝕏</a>
+        <a href="#" title="GitHub">⌘</a>
+        <a href="#" title="Discord">◆</a>
+        <a href="#" title="Email">@</a>
+    </div>
+
+    <div class="footer">
+        © 2026 MD. All rights reserved.
+    </div>
+
+    <script>
+        // Create floating particles
+        const particlesContainer = document.getElementById('particles');
+        for (let i = 0; i < 30; i++) {
+            const particle = document.createElement('div');
+            particle.className = 'particle';
+            particle.style.left = Math.random() * 100 + '%';
+            particle.style.animationDelay = Math.random() * 15 + 's';
+            particle.style.animationDuration = (10 + Math.random() * 10) + 's';
+            particle.style.width = (2 + Math.random() * 4) + 'px';
+            particle.style.height = particle.style.width;
+            particlesContainer.appendChild(particle);
+        }
+    </script>
+</body>
+</html>
