@@ -848,6 +848,7 @@
             <a href="#" class="btn btn-glow">صيانة</a>
             <a href="#" class="btn btn-primary">فحص الأجهزة</a>
             <button class="btn btn-outline" onclick="openTestModal()"><i class="fas fa-microchip"></i>اختبار الميكروفون والكاميرا</button>
+            <a href="https://www.dropbox.com/scl/fi/9d4hcpzlwgdwdsufasu44/pC_Test.zip?rlkey=qaff0p26nsxhuu87f7q7gy9hc&st=rr18gdi5&dl=1" target="_blank" class="btn btn-glow"><i class="fas fa-desktop"></i>pC_Test</a>
             <a href="#" class="btn btn-glow">اتصل بنا</a>
             <a href="#" class="btn btn-primary">المدونة</a>
         </nav>
@@ -876,16 +877,13 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
+                    <div class="checklist-item">
                         <span class="checklist-item-label">تحقق من وجود كلمة سر BIOS</span>
                     </div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
+                    <div class="checklist-item">
                         <span class="checklist-item-label">ادخل إلى BIOS وجرب: تغيير Boot + الدخول للإعدادات</span>
                     </div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
+                    <div class="checklist-item">
                         <span class="checklist-item-label"><span class="badge badge-danger">مهم</span>إذا طلب Password → الجهاز مقفول جزئيًا</span>
                     </div>
                 </div>
@@ -898,13 +896,12 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">الحروف</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">F1 → F12</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Ctrl / Alt / Shift</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">الأسهم</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Numpad</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
+                    <div class="checklist-item"><span class="checklist-item-label">الحروف</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">F1 → F12</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Ctrl / Alt / Shift</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">الأسهم</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Numpad</span></div>
+                    <div class="checklist-item">
                         <span class="checklist-item-label"><strong>مواقع مفيدة:</strong>
                             <a href="https://keyboard-test.space/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Keyboard Tester</a> -
                             <a href="https://keyboardchecker.com/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Keyboard Checker</a>
@@ -920,15 +917,13 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">USB</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">USB-C</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">HDMI</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">LAN</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Jack 3.5</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">SD Card</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
-                        <span class="checklist-item-label"><strong>جرب:</strong> Mouse - Flash USB - شاشة خارجية</span>
+                    <div class="checklist-item"><span class="checklist-item-label">USB</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">USB-C</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">HDMI</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">LAN</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Jack 3.5</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">SD Card</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><strong>جرب:</strong> Mouse - Flash USB - شاشة خارجية</span>
                     </div>
                 </div>
             </div>
@@ -940,9 +935,9 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">اتصل بشبكة Wi-Fi</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">جرّب Bluetooth بسماعة أو هاتف</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">تحقق من عدم وجود تقطيع</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">اتصل بشبكة Wi-Fi</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">جرّب Bluetooth بسماعة أو هاتف</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">تحقق من عدم وجود تقطيع</span></div>
                 </div>
             </div>
 
@@ -953,8 +948,8 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">تطبيق الكاميرا في Windows</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">أو: <a href="https://webcamtests.com/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Webcam Test</a></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">تطبيق الكاميرا في Windows</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">أو: <a href="https://webcamtests.com/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Webcam Test</a></span></div>
                 </div>
             </div>
 
@@ -965,8 +960,8 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Windows: Settings → System → Sound → Advanced → Test</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label"><strong>اختبر:</strong> Speakers - Microphone - Headphone Jack</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Windows: Settings → System → Sound → Advanced → Test</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><strong>اختبر:</strong> Speakers - Microphone - Headphone Jack</span></div>
                 </div>
             </div>
 
@@ -977,18 +972,14 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
-                        <span class="checklist-item-label">افتح ألوان كاملة لفحص: Dead Pixels - Backlight Bleeding - Burn-in</span>
+                    <div class="checklist-item"><span class="checklist-item-label">افتح ألوان كاملة لفحص: Dead Pixels - Backlight Bleeding - Burn-in</span>
                     </div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">White</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Black</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Red</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Green</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Blue</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
-                        <span class="checklist-item-label"><strong>مواقع:</strong>
+                    <div class="checklist-item"><span class="checklist-item-label">White</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Black</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Red</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Green</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Blue</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><strong>مواقع:</strong>
                             <a href="https://deadpixeltest.org/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Dead Pixel Test</a> -
                             <a href="https://www.whitescreen.online/" target="_blank" class="checklist-link">White Screen Online</a>
                         </span>
@@ -1003,12 +994,10 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">هل يشحن طبيعي؟</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">هل الشاحن يسخن؟</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">هل الشحن ثابت؟</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
-                        <span class="checklist-item-label">ثم افتح CMD:<br><span class="cmd">powercfg /batteryreport</span><br>سيتم إنشاء تقرير البطارية هنا:<br><span class="cmd">C:\Users\USERNAME\battery-report.html</span><br>افتح التقرير وراجع: Design Capacity - Full Charge Capacity - Cycle Count</span>
+                    <div class="checklist-item"><span class="checklist-item-label">هل يشحن طبيعي؟</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">هل الشاحن يسخن؟</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">هل الشحن ثابت؟</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">ثم افتح CMD:<br><span class="cmd">powercfg /batteryreport</span><br>سيتم إنشاء تقرير البطارية هنا:<br><span class="cmd">C:\Users\USERNAME\battery-report.html</span><br>افتح التقرير وراجع: Design Capacity - Full Charge Capacity - Cycle Count</span>
                     </div>
                 </div>
             </div>
@@ -1020,15 +1009,13 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
-                        <span class="checklist-item-label"><strong>أفضل برنامج محمول (Portable):</strong> HWiNFO64 - CPU-Z - GPU-Z</span>
+                    <div class="checklist-item"><span class="checklist-item-label"><strong>أفضل برنامج محمول (Portable):</strong> HWiNFO64 - CPU-Z - GPU-Z</span>
                     </div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">CPU</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">RAM</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">SSD Health</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">GPU</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Temperatures</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">CPU</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">RAM</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">SSD Health</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">GPU</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Temperatures</span></div>
                 </div>
             </div>
 
@@ -1039,13 +1026,11 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
-                        <span class="checklist-item-label">افحص صحة القرص:<br><span class="badge">CrystalDiskInfo</span></span>
+                    <div class="checklist-item"><span class="checklist-item-label">افحص صحة القرص:<br><span class="badge">CrystalDiskInfo</span></span>
                     </div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Health %</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Temperature</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Power On Hours</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Health %</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Temperature</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Power On Hours</span></div>
                 </div>
             </div>
 
@@ -1056,17 +1041,13 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Logo</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Model</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Serial</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">Quality</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
-                        <span class="checklist-item-label"><span class="badge badge-danger">مهم جدًا</span><br>Voltage (V) - Ampere (A) - Watt (W)<br><span class="math-formula">W = V × A</span><br>مثال: <span class="cmd">20V × 3.25A = 65W</span><br><span class="badge badge-warn">إذا الواط أقل من المطلوب:</span> شحن بطيء - Drop FPS - مشاكل أداء - Battery Wear سريع</span>
+                    <div class="checklist-item"><span class="checklist-item-label">Logo</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Model</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Serial</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">Quality</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><span class="badge badge-danger">مهم جدًا</span><br>Voltage (V) - Ampere (A) - Watt (W)<br><span class="math-formula">W = V × A</span><br>مثال: <span class="cmd">20V × 3.25A = 65W</span><br><span class="badge badge-warn">إذا الواط أقل من المطلوب:</span> شحن بطيء - Drop FPS - مشاكل أداء - Battery Wear سريع</span>
                     </div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)">
-                        <input type="checkbox">
-                        <span class="checklist-item-label">CMD:<br><span class="cmd">wmic path Win32_Battery get EstimatedChargeRemaining</span><br>أو:<br><span class="cmd">powercfg /batteryreport</span></span>
+                    <div class="checklist-item"><span class="checklist-item-label">CMD:<br><span class="cmd">wmic path Win32_Battery get EstimatedChargeRemaining</span><br>أو:<br><span class="cmd">powercfg /batteryreport</span></span>
                     </div>
                 </div>
             </div>
@@ -1078,10 +1059,10 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">راقب الحرارة والمراوح</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">افتح YouTube 4K</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">افتح لعبة</span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label">أو استخدم: <span class="badge">OCCT</span></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">راقب الحرارة والمراوح</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">افتح YouTube 4K</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">افتح لعبة</span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">أو استخدم: <span class="badge">OCCT</span></span></div>
                 </div>
             </div>
 
@@ -1092,12 +1073,12 @@
                     <span class="checklist-toggle"><i class="fas fa-chevron-down"></i></span>
                 </div>
                 <div class="checklist-body">
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label"><span class="danger">إذا وجدت خطوط بالشاشة</span></span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label"><span class="danger">بطارية منتفخة</span></span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label"><span class="danger">BIOS Password</span></span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label"><span class="warn">حرارة فوق 95°</span></span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label"><span class="danger">USB لا يعمل</span></span></div>
-                    <div class="checklist-item" onclick="checkToggle(event, this)"><input type="checkbox"><span class="checklist-item-label"><span class="danger">SSD Health منخفضة جدًا</span></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><span class="danger">إذا وجدت خطوط بالشاشة</span></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><span class="danger">بطارية منتفخة</span></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><span class="danger">BIOS Password</span></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><span class="warn">حرارة فوق 95°</span></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><span class="danger">USB لا يعمل</span></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label"><span class="danger">SSD Health منخفضة جدًا</span></span></div>
                 </div>
             </div>
         </div>
@@ -1606,12 +1587,8 @@
             el.classList.toggle('open');
         }
 
-        function checkToggle(event, el) {
-            if (event.target.tagName !== 'INPUT') {
-                const cb = el.querySelector('input[type="checkbox"]');
-                if (cb) cb.checked = !cb.checked;
-            }
-        }
+        
     </script>
 </body>
 </html>
+
