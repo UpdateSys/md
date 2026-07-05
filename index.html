@@ -180,7 +180,7 @@
         font-family: 'Tajawal', sans-serif;
         text-decoration: none;
         border-radius: 16px;
-        transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
         cursor: pointer;
         border: 1px solid rgba(255, 255, 255, 0.06);
         letter-spacing: 0.5px;
@@ -204,7 +204,7 @@
         border-radius: 16px;
         background: linear-gradient(135deg, rgba(138, 43, 226, 0.15), transparent);
         opacity: 0;
-        transition: opacity 0.35s;
+        transition: opacity 0.18s ease;
     }
 
     .btn:hover::before {
@@ -212,9 +212,9 @@
     }
 
     .btn:hover {
-        transform: translateY(-2px) scale(1.03);
+        transform: translateY(-2px) scale(1.02);
         border-color: rgba(138, 43, 226, 0.4);
-        box-shadow: 0 8px 32px rgba(138, 43, 226, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        box-shadow: 0 6px 22px rgba(138, 43, 226, 0.22), inset 0 1px 0 rgba(255, 255, 255, 0.1);
         color: #ffffff;
     }
 
@@ -311,7 +311,7 @@
         color: rgba(255, 255, 255, 0.4);
         text-decoration: none;
         font-size: 18px;
-        transition: all 0.35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease, color 0.18s ease, background 0.18s ease;
         backdrop-filter: blur(8px);
         -webkit-backdrop-filter: blur(8px);
         background: rgba(255, 255, 255, 0.02);
@@ -320,8 +320,8 @@
     .social-links a:hover {
         border-color: rgba(138, 43, 226, 0.5);
         color: #c471ed;
-        transform: translateY(-3px) scale(1.1);
-        box-shadow: 0 8px 24px rgba(138, 43, 226, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+        transform: translateY(-2px) scale(1.04);
+        box-shadow: 0 6px 18px rgba(138, 43, 226, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.1);
         background: rgba(138, 43, 226, 0.1);
     }
 
@@ -830,14 +830,9 @@
     }
 </style>
 </head>
-<body>
+<body id="top">
 
     <canvas id="particleCanvas"></canvas>
-
-    <nav class="buttons-container">
-        <a href="https://updatesys.github.io/Performance/" target="_blank" class="btn btn-primary">Performance</a>
-        <a href="https://updatesys.github.io/Performance_Gui/" target="_blank" class="btn btn-primary">Performance_Gui</a>
-    </nav>
 
     <div class="main-wrapper">
         <div class="hero">
@@ -849,11 +844,13 @@
 
         <nav class="buttons-container">
             <a href="#" class="btn btn-primary">الرئيسية</a>
-            <a href="https://mega.nz/folder/NZknDYrA#KlV5ksYumrOSL50-Iwjp3g" target="_blank" class="btn btn-outline"><i class="fas fa-link"></i>برامج</a>
+            <a href="https://updatesys.github.io/Performance/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Performance</a>
+            <a href="https://updatesys.github.io/Performance_Gui/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Performance_Gui</a>
+            <a href="https://mega.nz/folder/NZknDYrA#KlV5ksYumrOSL50-Iwjp3g" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fas fa-link"></i>برامج</a>
             <a href="#" class="btn btn-glow">صيانة</a>
             <a href="#" class="btn btn-primary">فحص الأجهزة</a>
             <button class="btn btn-outline" onclick="openTestModal()"><i class="fas fa-microchip"></i>اختبار الميكروفون والكاميرا</button>
-            <a href="https://www.dropbox.com/scl/fi/9d4hcpzlwgdwdsufasu44/pC_Test.zip?rlkey=qaff0p26nsxhuu87f7q7gy9hc&st=rr18gdi5&dl=1" target="_blank" class="btn btn-glow"><i class="fas fa-desktop"></i>pC_Test</a>
+            <a href="https://www.dropbox.com/scl/fi/9d4hcpzlwgdwdsufasu44/pC_Test.zip?rlkey=qaff0p26nsxhuu87f7q7gy9hc&st=rr18gdi5&dl=1" target="_blank" rel="noopener noreferrer" class="btn btn-glow"><i class="fas fa-desktop"></i>pC_Test</a>
             <a href="#" class="btn btn-glow">اتصل بنا</a>
             <a href="#" class="btn btn-primary">المدونة</a>
         </nav>
@@ -908,8 +905,8 @@
                     <div class="checklist-item"><span class="checklist-item-label">Numpad</span></div>
                     <div class="checklist-item">
                         <span class="checklist-item-label"><strong>مواقع مفيدة:</strong>
-                            <a href="https://keyboard-test.space/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Keyboard Tester</a> -
-                            <a href="https://keyboardchecker.com/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Keyboard Checker</a>
+                            <a href="https://keyboard-test.space/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="checklist-link">Keyboard Tester</a> -
+                            <a href="https://keyboardchecker.com/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="checklist-link">Keyboard Checker</a>
                         </span>
                     </div>
                 </div>
@@ -954,7 +951,7 @@
                 </div>
                 <div class="checklist-body">
                     <div class="checklist-item"><span class="checklist-item-label">تطبيق الكاميرا في Windows</span></div>
-                    <div class="checklist-item"><span class="checklist-item-label">أو: <a href="https://webcamtests.com/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Webcam Test</a></span></div>
+                    <div class="checklist-item"><span class="checklist-item-label">أو: <a href="https://webcamtests.com/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="checklist-link">Webcam Test</a></span></div>
                 </div>
             </div>
 
@@ -985,8 +982,8 @@
                     <div class="checklist-item"><span class="checklist-item-label">Green</span></div>
                     <div class="checklist-item"><span class="checklist-item-label">Blue</span></div>
                     <div class="checklist-item"><span class="checklist-item-label"><strong>مواقع:</strong>
-                            <a href="https://deadpixeltest.org/?utm_source=chatgpt.com" target="_blank" class="checklist-link">Dead Pixel Test</a> -
-                            <a href="https://www.whitescreen.online/" target="_blank" class="checklist-link">White Screen Online</a>
+                            <a href="https://deadpixeltest.org/?utm_source=chatgpt.com" target="_blank" rel="noopener noreferrer" class="checklist-link">Dead Pixel Test</a> -
+                            <a href="https://www.whitescreen.online/" target="_blank" rel="noopener noreferrer" class="checklist-link">White Screen Online</a>
                         </span>
                     </div>
                 </div>
@@ -1120,10 +1117,10 @@
                 <div class="modal-card-title"><i class="fas fa-volume-up"></i>اختبار الصوت</div>
                 <p>اختبر مكبرات الصوت - تشغيل صوت على القناة المحددة</p>
                 <div class="btn-row">
-                    <button onclick="playDefaultSound()" class="btn btn-primary"><i class="fas fa-volume-up"></i>ثنائي</button>
-                    <button onclick="playLeftSound()" class="btn btn-outline"><i class="fas fa-arrow-left"></i>يسار</button>
-                    <button onclick="playRightSound()" class="btn btn-glow"><i class="fas fa-arrow-right"></i>يمين</button>
-                    <button onclick="stopSound()" class="btn btn-outline"><i class="fas fa-stop"></i>إيقاف</button>
+                    <button type="button" onclick="playDefaultSound()" class="btn btn-primary"><i class="fas fa-volume-up"></i>ثنائي</button>
+                    <button type="button" onclick="playLeftSound()" class="btn btn-outline"><i class="fas fa-arrow-left"></i>يسار</button>
+                    <button type="button" onclick="playRightSound()" class="btn btn-glow"><i class="fas fa-arrow-right"></i>يمين</button>
+                    <button type="button" onclick="stopSound()" class="btn btn-outline"><i class="fas fa-stop"></i>إيقاف</button>
                 </div>
                 <div id="soundResult"></div>
             </div>
@@ -1132,9 +1129,9 @@
                 <div class="modal-card-title"><i class="fas fa-microphone"></i>اختبار الميكروفون</div>
                 <p>يسجل ويعيد تشغيل صوتك (حد أقصى ٧ ثوانٍ)</p>
                 <div class="btn-row" style="margin-bottom:4px;">
-                    <button id="startMicBtn" onclick="startMicTest()" class="btn btn-primary"><i class="fas fa-circle"></i>بدء التسجيل</button>
-                    <button id="stopMicBtn" onclick="stopMicTest()" class="btn btn-outline" disabled><i class="fas fa-square"></i>إيقاف</button>
-                    <button id="playbackBtn" onclick="playbackRecording()" class="btn btn-glow" disabled><i class="fas fa-play"></i>تشغيل</button>
+                    <button type="button" id="startMicBtn" onclick="startMicTest()" class="btn btn-primary"><i class="fas fa-circle"></i>بدء التسجيل</button>
+                    <button type="button" id="stopMicBtn" onclick="stopMicTest()" class="btn btn-outline" disabled><i class="fas fa-square"></i>إيقاف</button>
+                    <button type="button" id="playbackBtn" onclick="playbackRecording()" class="btn btn-glow" disabled><i class="fas fa-play"></i>تشغيل</button>
                 </div>
                 <div class="mic-level-wrapper">
                     <span>المستوى:</span>
@@ -1155,15 +1152,15 @@
                     <div id="cameraPlaceholder"><i class="fas fa-camera"></i></div>
                 </div>
                 <div class="btn-row">
-                    <button id="startCameraBtn" onclick="startCamera()" class="btn btn-primary"><i class="fas fa-play"></i>تشغيل الكاميرا</button>
-                    <button id="stopCameraBtn" onclick="stopCamera()" class="btn btn-outline" disabled><i class="fas fa-stop"></i>إيقاف</button>
-                    <button id="snapshotBtn" onclick="takeSnapshot()" class="btn btn-glow" disabled><i class="fas fa-camera"></i>تصوير</button>
+                    <button type="button" id="startCameraBtn" onclick="startCamera()" class="btn btn-primary"><i class="fas fa-play"></i>تشغيل الكاميرا</button>
+                    <button type="button" id="stopCameraBtn" onclick="stopCamera()" class="btn btn-outline" disabled><i class="fas fa-stop"></i>إيقاف</button>
+                    <button type="button" id="snapshotBtn" onclick="takeSnapshot()" class="btn btn-glow" disabled><i class="fas fa-camera"></i>تصوير</button>
                 </div>
                 <div id="cameraStatus">الكاميرا متوقفة</div>
             </div>
 
             <div class="modal-close-row">
-                <button onclick="closeTestModal()" class="btn btn-glow"><i class="fas fa-times"></i>إغلاق</button>
+                <button type="button" onclick="closeTestModal()" class="btn btn-glow"><i class="fas fa-times"></i>إغلاق</button>
             </div>
         </div>
     </div>
@@ -1260,10 +1257,45 @@
         let volumeInterval = null;
         let recordedBlobUrl = null;
 
+        function setStatus(elementId, message, color = '#00ff88') {
+            const el = document.getElementById(elementId);
+            if (!el) return;
+            el.textContent = message;
+            el.style.color = color;
+        }
+
+        function ensureAudioContext() {
+            if (!window.AudioContext && !window.webkitAudioContext) {
+                throw new Error('المتصفح لا يدعم تشغيل الصوت');
+            }
+
+            if (!audioContext || audioContext.state === 'closed') {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            }
+
+            if (audioContext.state === 'suspended') {
+                audioContext.resume().catch(() => {});
+            }
+
+            return audioContext;
+        }
+
+        function stopOscillator() {
+            if (oscillator) {
+                try {
+                    oscillator.stop();
+                } catch (e) {}
+                try {
+                    oscillator.disconnect();
+                } catch (e) {}
+                oscillator = null;
+            }
+        }
+
         function openTestModal() {
             const modal = document.getElementById('testModal');
             modal.classList.add('show');
-            document.getElementById('micStatus').textContent = 'جاري تحميل الأجهزة...';
+            setStatus('micStatus', 'جاري تحميل الأجهزة...', 'rgba(255,255,255,0.4)');
             requestMediaPermissions();
         }
 
@@ -1314,6 +1346,11 @@
         }
 
         async function requestMediaPermissions() {
+            if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                setStatus('micStatus', 'المتصفح لا يدعم صلاحيات الميكروفون أو الكاميرا.', '#ffcc00');
+                return;
+            }
+
             try {
                 const audioStream = await navigator.mediaDevices.getUserMedia({ audio: true }).catch(() => null);
                 const videoStream = await navigator.mediaDevices.getUserMedia({ video: true }).catch(() => null);
@@ -1324,138 +1361,125 @@
                 await enumerateDevices();
             } catch (err) {
                 console.warn('Permission request result:', err.message);
+                setStatus('micStatus', 'تمت إزالة صلاحيات الوصول أو تم رفضها من المتصفح.', '#ffcc00');
                 enumerateDevices();
             }
         }
 
         async function playDefaultSound() {
             try {
-                audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                oscillator = audioContext.createOscillator();
-                const gainNode = audioContext.createGain();
+                const context = ensureAudioContext();
+                stopOscillator();
+                oscillator = context.createOscillator();
+                const gainNode = context.createGain();
 
                 oscillator.connect(gainNode);
-                gainNode.connect(audioContext.destination);
+                gainNode.connect(context.destination);
                 gainNode.gain.value = 0.3;
 
                 oscillator.frequency.value = 440;
                 oscillator.type = 'sine';
                 oscillator.start();
 
-                document.getElementById('soundResult').textContent = '✓ تشغيل على القناتين';
-                document.getElementById('soundResult').style.color = '#00ff88';
+                setStatus('soundResult', '✓ تشغيل على القناتين');
 
                 setTimeout(() => {
-                    if (oscillator) {
-                        oscillator.stop();
-                        oscillator.disconnect();
-                        oscillator = null;
-                    }
+                    stopOscillator();
                 }, 2000);
             } catch (err) {
-                document.getElementById('soundResult').textContent = '✗ خطأ: ' + err.message;
-                document.getElementById('soundResult').style.color = '#ff3355';
+                setStatus('soundResult', '✗ خطأ: ' + err.message, '#ff3355');
             }
         }
 
         async function playLeftSound() {
             try {
-                audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                oscillator = audioContext.createOscillator();
-                const gainNode = audioContext.createGain();
-                const splitter = audioContext.createChannelSplitter(2);
-                const merger = audioContext.createChannelMerger(2);
+                const context = ensureAudioContext();
+                stopOscillator();
+                oscillator = context.createOscillator();
+                const gainNode = context.createGain();
+                const splitter = context.createChannelSplitter(2);
+                const merger = context.createChannelMerger(2);
 
                 oscillator.connect(splitter);
                 gainNode.gain.value = 0.3;
 
                 splitter.connect(gainNode, 0);
                 gainNode.connect(merger, 0, 0);
-                merger.connect(audioContext.destination);
+                merger.connect(context.destination);
 
                 oscillator.frequency.value = 440;
                 oscillator.type = 'sine';
                 oscillator.start();
 
-                document.getElementById('soundResult').textContent = '✓ تشغيل على القناة اليسرى';
-                document.getElementById('soundResult').style.color = '#00ff88';
+                setStatus('soundResult', '✓ تشغيل على القناة اليسرى');
 
                 setTimeout(() => {
-                    if (oscillator) {
-                        oscillator.stop();
-                        oscillator.disconnect();
-                        oscillator = null;
-                    }
+                    stopOscillator();
                 }, 2000);
             } catch (err) {
-                document.getElementById('soundResult').textContent = '✗ خطأ: ' + err.message;
-                document.getElementById('soundResult').style.color = '#ff3355';
+                setStatus('soundResult', '✗ خطأ: ' + err.message, '#ff3355');
             }
         }
 
         async function playRightSound() {
             try {
-                audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                oscillator = audioContext.createOscillator();
-                const gainNode = audioContext.createGain();
-                const splitter = audioContext.createChannelSplitter(2);
-                const merger = audioContext.createChannelMerger(2);
+                const context = ensureAudioContext();
+                stopOscillator();
+                oscillator = context.createOscillator();
+                const gainNode = context.createGain();
+                const splitter = context.createChannelSplitter(2);
+                const merger = context.createChannelMerger(2);
 
                 oscillator.connect(splitter);
                 gainNode.gain.value = 0.3;
 
                 splitter.connect(gainNode, 1);
                 gainNode.connect(merger, 0, 1);
-                merger.connect(audioContext.destination);
+                merger.connect(context.destination);
 
                 oscillator.frequency.value = 440;
                 oscillator.type = 'sine';
                 oscillator.start();
 
-                document.getElementById('soundResult').textContent = '✓ تشغيل على القناة اليمنى';
-                document.getElementById('soundResult').style.color = '#00ff88';
+                setStatus('soundResult', '✓ تشغيل على القناة اليمنى');
 
                 setTimeout(() => {
-                    if (oscillator) {
-                        oscillator.stop();
-                        oscillator.disconnect();
-                        oscillator = null;
-                    }
+                    stopOscillator();
                 }, 2000);
             } catch (err) {
-                document.getElementById('soundResult').textContent = '✗ خطأ: ' + err.message;
-                document.getElementById('soundResult').style.color = '#ff3355';
+                setStatus('soundResult', '✗ خطأ: ' + err.message, '#ff3355');
             }
         }
 
         function stopSound() {
-            if (oscillator) {
-                oscillator.stop();
-                oscillator.disconnect();
-                oscillator = null;
+            stopOscillator();
+            if (audioContext && audioContext.state !== 'closed') {
+                audioContext.close().catch(() => {});
             }
-            if (audioContext) {
-                audioContext.close();
-                audioContext = null;
-            }
-            document.getElementById('soundResult').textContent = 'تم إيقاف الصوت';
+            audioContext = null;
+            setStatus('soundResult', 'تم إيقاف الصوت');
         }
 
         async function startMicTest() {
             try {
+                if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                    throw new Error('المتصفح لا يدعم تسجيل الميكروفون');
+                }
+                if (!window.MediaRecorder) {
+                    throw new Error('المتصفح لا يدعم MediaRecorder');
+                }
+
                 const micDeviceId = document.getElementById('micSelect').value;
                 const constraints = { audio: micDeviceId ? { deviceId: { exact: micDeviceId } } : true };
 
                 micStream = await navigator.mediaDevices.getUserMedia(constraints);
                 recordedChunks = [];
 
-                if (!audioContext) {
-                    audioContext = new (window.AudioContext || window.webkitAudioContext)();
-                }
-                analyser = audioContext.createAnalyser();
+                const context = ensureAudioContext();
+                analyser = context.createAnalyser();
                 analyser.fftSize = 256;
 
-                const source = audioContext.createMediaStreamSource(micStream);
+                const source = context.createMediaStreamSource(micStream);
                 source.connect(analyser);
 
                 mediaRecorder = new MediaRecorder(micStream);
@@ -1465,8 +1489,7 @@
                 document.getElementById('startMicBtn').disabled = true;
                 document.getElementById('stopMicBtn').disabled = false;
                 document.getElementById('playbackBtn').disabled = true;
-                document.getElementById('micStatus').textContent = 'جاري التسجيل... (يتوقف تلقائياً بعد ٧ ثوانٍ)';
-                document.getElementById('micStatus').style.color = '#00ff88';
+                setStatus('micStatus', 'جاري التسجيل... (يتوقف تلقائياً بعد ٧ ثوانٍ)');
 
                 const dataArray = new Uint8Array(analyser.frequencyBinCount);
                 volumeInterval = setInterval(() => {
@@ -1481,13 +1504,13 @@
                     }
                 }, 7000);
             } catch (err) {
-                document.getElementById('micStatus').textContent = '✗ خطأ: ' + err.message;
-                document.getElementById('micStatus').style.color = '#ff3355';
+                setStatus('micStatus', '✗ خطأ: ' + err.message, '#ff3355');
             }
         }
 
         function stopMicTest() {
             clearInterval(volumeInterval);
+            volumeInterval = null;
             document.getElementById('micLevelBar').style.width = '0%';
 
             if (mediaRecorder && mediaRecorder.state === 'recording') {
@@ -1499,8 +1522,7 @@
                     recordedBlobUrl = URL.createObjectURL(blob);
 
                     document.getElementById('playbackBtn').disabled = false;
-                    document.getElementById('micStatus').textContent = '✓ اكتمل التسجيل. اضغط تشغيل للاستماع.';
-                    document.getElementById('micStatus').style.color = '#00ff88';
+                    setStatus('micStatus', '✓ اكتمل التسجيل. اضغط تشغيل للاستماع.');
                 };
                 mediaRecorder.stop();
             }
@@ -1518,13 +1540,11 @@
             if (!recordedBlobUrl) return;
             const audio = new Audio(recordedBlobUrl);
             audio.play().catch(err => {
-                document.getElementById('micStatus').textContent = '✗ خطأ في التشغيل: ' + err.message;
-                document.getElementById('micStatus').style.color = '#ff3355';
+                setStatus('micStatus', '✗ خطأ في التشغيل: ' + err.message, '#ff3355');
             });
-            document.getElementById('micStatus').textContent = '▶ جاري تشغيل التسجيل...';
-            document.getElementById('micStatus').style.color = '#00ff88';
+            setStatus('micStatus', '▶ جاري تشغيل التسجيل...');
             audio.onended = () => {
-                document.getElementById('micStatus').textContent = '✓ انتهى التشغيل';
+                setStatus('micStatus', '✓ انتهى التشغيل');
             };
         }
 
@@ -1532,6 +1552,10 @@
             const video = document.getElementById('video');
             const placeholder = document.getElementById('cameraPlaceholder');
             try {
+                if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) {
+                    throw new Error('المتصفح لا يدعم الكاميرا');
+                }
+
                 const cameraDeviceId = document.getElementById('cameraSelect').value;
                 const constraints = { video: cameraDeviceId ? { deviceId: { exact: cameraDeviceId } } : true };
 
@@ -1544,11 +1568,9 @@
                 document.getElementById('startCameraBtn').disabled = true;
                 document.getElementById('stopCameraBtn').disabled = false;
                 document.getElementById('snapshotBtn').disabled = false;
-                document.getElementById('cameraStatus').textContent = '✓ الكاميرا تعمل';
-                document.getElementById('cameraStatus').style.color = '#00ff88';
+                setStatus('cameraStatus', '✓ الكاميرا تعمل');
             } catch (err) {
-                document.getElementById('cameraStatus').textContent = '✗ خطأ: ' + err.message;
-                document.getElementById('cameraStatus').style.color = '#ff3355';
+                setStatus('cameraStatus', '✗ خطأ: ' + err.message, '#ff3355');
             }
         }
 
